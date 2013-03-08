@@ -19,3 +19,11 @@ Let's get crazy:
     sit amet velit.
 
 2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+
+1. In Ruby you can map like this:
+
+        ['a', 'b'].map { |x| x.uppercase }
+
+2. In Rails, you can do a shortcut:
+
+        ['a', 'b'].map(&:uppercase)
