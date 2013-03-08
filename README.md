@@ -8,6 +8,8 @@ Tests
 
 ## Test test
 
+- 1 editing modes
+
 Let's get crazy:
 
 1.  This is a list item with two paragraphs. Lorem ipsum dolor
