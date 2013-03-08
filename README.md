@@ -10,6 +10,11 @@ Tests
 
 - 1 editing modes
 
+Blockquotes
+
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> id sem consectetuer libero luctus adipiscing. 
+
 Let's get crazy:
 
 1.  This is a list item with two paragraphs. Lorem ipsum dolor
