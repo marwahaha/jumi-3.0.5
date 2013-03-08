@@ -49,3 +49,7 @@ I get 10 times more traffic from [Google] [1] than from
 ``` html
 <script src="site-scripts.js"></script>
 ```
+
+``` 
+This is a paragraph
+```
