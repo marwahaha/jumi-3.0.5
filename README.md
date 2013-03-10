@@ -72,6 +72,7 @@ $document->addScript(JURI::base(true).'/js/test.js');
 -   In article : {loadposition jumi1}
 
 >For joomla developpers
+
 One drawback to this JS stuff is that, in Joomla 3.x, it sends the JS file below Mootools and above jQuery.
 So, if jQuery is your thing, add :
 
