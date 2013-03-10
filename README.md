@@ -23,23 +23,28 @@ New expression :
 ```
 It is possible to use both, but NOT TOGETHER in the same article.
 
-2 - We can also write PHP within the new expression  :
+## New feature in article : usage
 
->\{jumi\}
-`` <?php
+1 - We can write PHP within the new expression  :
+
+\{jumi\}
+```php
+<?php
 $myVariable = 'John';
 echo 'Hello, '. $myVariable .'.';
-?>``
+```
 \{/jumi\}
 
 
-3 - Jumi has been designed from the beginning to work with Joomla API.
+2 - Jumi has been designed from the beginning to work with Joomla API.
 
->\{jumi\}`` <p><a href="index.php/using-joomla/getting-help">Getting help</a></p>
-``
+\{jumi\}
+```html
+<p><a href="index.php/using-joomla/getting-help">Getting help</a></p>
+```
 \{/jumi\}
 
-or
+Or
 
 
 \{jumi\}
