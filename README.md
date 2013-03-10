@@ -3,7 +3,7 @@ jumi-3.0.5
 
 a jumi version with a new feature - based on jumi by http://2glux.com/projects/jumi
 ## How it began
-Simon Poghosyan did a wonderful job at when he upgraded [Jumi](http://2glux.com/projects/jumi) to work better with joomla 2.5.x and joomla 3.x.
+Simon Poghosyan did a wonderful job when he upgraded [Jumi](http://2glux.com/projects/jumi) to work better with joomla 2.5.x and joomla 3.x.
 
 So, when Raygen and I met on [jumi forum](http://2glux.com/forum/jumi/), we decided to make it even better and we rewrote it a little to add a feature that existed in previous versions but was abandonned (explanation below).
 
@@ -46,3 +46,18 @@ $menuid = JFactory::getApplication()->getMenu()->getActive()->id;
 ?>
 <p id="idmenu-<?php echo $menuid; ?>">Test menu ID<p>``
 \{/jumi\}
+
+```php
+<?php
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+// create a log channel
+$log = new Logger('name');
+$log->pushHandler(new StreamHandler('path/to/your.log', Logger::WARNING));
+
+// add records to the log
+$log->addWarning('Foo');
+$log->addError('Bar');
+```
