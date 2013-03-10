@@ -80,3 +80,7 @@ So, if jQuery is your thing, add :
 JHtml::_('bootstrap.framework');
 ```
 in mod_jumi.php
+
+###### Credits
+[Simon Poghosyan](http://2glux.com/projects/jumi)
+Raygen and ghazal
