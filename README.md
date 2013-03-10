@@ -70,3 +70,12 @@ $document->addScript(JURI::base(true).'/js/test.js');
 -   Publish everywhere
 -   Choose a specific position : jumi1 for example
 -   In article : {loadposition jumi1}
+
+>For joomla developpers
+One drawback to this JS stuff is that, in Joomla 3.x, it sends the JS file below Mootools and above jQuery.
+So, if jQuery is your thing, add :
+
+```php
+JHtml::_('bootstrap.framework');
+```
+in mod_jumi.php
