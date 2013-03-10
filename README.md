@@ -59,6 +59,7 @@ $menuid = JFactory::getApplication()->getMenu()->getActive()->id;
 ## Jumi module
 To be used like a regular module.
 Taking advantage of its ability to "crunch" Joomla API, it can be used to send a JS file to head tag when one wants to implement a CSS/JS files combination in one article only.
+
 In Code Written :
 ```php
 <?php 
