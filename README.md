@@ -44,7 +44,7 @@ echo 'Hello, '. $myVariable .'.';
 ```
 \{/jumi\}
 
-Or
+Or, getting the menu ID and applying it to a tag ID CSS selector
 
 
 \{jumi\}
@@ -55,3 +55,17 @@ $menuid = JFactory::getApplication()->getMenu()->getActive()->id;
 <p id="idmenu-<?php echo $menuid; ?>">Test menu ID<p>
 ```
 \{/jumi\}
+
+## Jumi module
+To be used like a regular module.
+Taking advantage of its ability to "crunch" Joomla API, it can be used to send a JS file to head tag when one wants to implement a CSS/JS files combination in one article only.
+In Code Written :
+```php
+<?php 
+$document = JFactory::getDocument();
+$document->addStyleSheet(JURI::base(true).'/js/test.css');
+$document->addScript(JURI::base(true).'/js/test.js');
+```
+-   Publish everywhere
+-   Choose a specific position : jumi1 for example
+-   In article : {loadposition jumi1}
