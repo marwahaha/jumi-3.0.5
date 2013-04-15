@@ -1,7 +1,11 @@
 jumi-3.0.5
 ==========
 
-a jumi version with a new feature - based on jumi by http://2glux.com/projects/jumi
+A jumi version with a new feature - based on jumi by http://2glux.com/projects/jumi
+
+If you have issues with this version, post on Issues on github :
+https://github.com/ghazal/jumi-3.0.5
+
 ## How it began
 Simon Poghosyan did a wonderful job when he upgraded [Jumi](http://2glux.com/projects/jumi) to work better with joomla 2.5.x and joomla 3.x.
 
