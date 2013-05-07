@@ -63,8 +63,9 @@ $menuid = JFactory::getApplication()->getMenu()->getActive()->id;
 3 - We can add a php file in an article as well :
 
 ```html
-{jumi js/process2.php}{/jumi}
+{jumi jumifolder/file.php}{/jumi}
 ```
+where file.php is located in a folder named "jumifolder" placed at your joomla package root.
 
 ## Jumi module
 To be used like a regular module.
