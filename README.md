@@ -31,22 +31,23 @@ It is possible to use both, but NOT TOGETHER in the same article.
 
 1 - We can write PHP within the new expression  :
 
-\{jumi\}
 ```php
+{jumi\}
 <?php
 $myVariable = 'John';
 echo 'Hello, '. $myVariable .'.';
+{/jumi\}
 ```
-\{/jumi\}
 
 
 2 - Jumi has been designed from the beginning to work with Joomla API.
 
-\{jumi\}
 ```html
+{jumi\}
 <p><a href="index.php/using-joomla/getting-help">Getting help</a></p>
+{/jumi\}
 ```
-\{/jumi\}
+
 
 Or, getting the menu ID and applying it to a tag ID CSS selector
 
