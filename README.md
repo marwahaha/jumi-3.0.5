@@ -32,34 +32,33 @@ It is possible to use both, but NOT TOGETHER in the same article.
 1 - We can write PHP within the new expression  :
 
 ```php
-{jumi\}
+{jumi}
 <?php
 $myVariable = 'John';
 echo 'Hello, '. $myVariable .'.';
-{/jumi\}
+{/jumi}
 ```
 
 
 2 - Jumi has been designed from the beginning to work with Joomla API.
 
 ```html
-{jumi\}
+{jumi}
 <p><a href="index.php/using-joomla/getting-help">Getting help</a></p>
-{/jumi\}
+{/jumi}
 ```
 
 
 Or, getting the menu ID and applying it to a tag ID CSS selector
 
-
-\{jumi\}
 ```php
+{jumi}
 <?php 
 $menuid = JFactory::getApplication()->getMenu()->getActive()->id;
 
 <p id="idmenu-<?php echo $menuid; ?>">Test menu ID<p>
+{/jumi}
 ```
-\{/jumi\}
 
 3 - We can add a php file in an article as well :
 
