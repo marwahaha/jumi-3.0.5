@@ -4,7 +4,6 @@
 * @package   Jumi
 * @copyright (C) 2008 - 2010 Martin Hajek, 2011 Edvard Ananyan
 * @license   GNU/GPL v3 http://www.gnu.org/licenses/gpl.html
-* Raygen new regex
 */
 
 defined('_JEXEC') or die('Restricted access');
@@ -63,7 +62,7 @@ class plgSystemJumi extends JPlugin {
 									$storage_source = $this->getStorageSource(trim($result[$matchi][1]), $pluginParams->default_absolute_path); //filepathname or record id or ""
 									$code_written = $result[$matchi][2]; //raw code written or ""
 								
-									$output = $this->getOutput($code_written, $storage_source, $this->debug);
+									$output = $this->getOutput($code_written, $storage_source);
 									//Final replacement of $regex1 (i.e. {jumi ...}...{/jumi}) in $article->text by eval $output
 									ob_start();
 									eval("?>".$output);
@@ -72,9 +71,11 @@ class plgSystemJumi extends JPlugin {
 									ob_end_clean();
 									$content = preg_replace($regex1, $output, $content, 1);
 								}
-								if ($pluginParams->nested_replace == 0) {
+							/*
+	if ($nested == 0) {
 						  		$continuesearching = false;
 						  	}
+*/
 							} else {
 				   		  $continuesearching = false;
 							}
@@ -168,7 +169,7 @@ class plgSystemJumi extends JPlugin {
         }
     }
 
-	function getOutput($code_written, $storage_source, $debug) 
+	function getOutput($code_written, $storage_source) 
 	{ //returns Jumi $output
 		$output = ''; // Jumi output
 		if($code_written == '' && $storage_source == '') { //if nothing to show
