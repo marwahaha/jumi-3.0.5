@@ -1,3 +1,8 @@
+Hi all, I am going to clean this version of Jumi of all Joomla 2.5 leftovers.
+My goal is to test and modify (if necessary) on a Joomla 3.5 version.
+Let's get a beautylift for Jumi !
+If anyone is ready to help, feel free and post on Issues.
+
 jumi-3.0.5
 ==========
 
