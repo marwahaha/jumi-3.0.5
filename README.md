@@ -17,7 +17,28 @@ Simon Poghosyan did a wonderful job when he upgraded [Jumi](http://2glux.com/pro
 
 So, when Raygen and I met on [jumi forum](http://2glux.com/forum/jumi/), we decided to make it even better and we rewrote it a little to add a feature that existed in previous versions but was abandonned (explanation below).
 
-## New feature in component : usage
+## Regular use
+1 - Open jumi component
+2 - Create a new element
+3 - Insert your code. It can be Joomla API based.
+
+Example :
+```php
+<?php
+$user = JFactory::getUser();
+?>
+
+<p><?php echo JText::_('Utilisateur enregistré le : '); ?><span><?php echo JHtml::_('date', $user->registerDate); ?></span></p>
+
+<p><?php echo JText::_('Dernière visite le : '); ?><span><?php echo JHtml::_('date', $user->lastvisitDate); ?></span></p>
+```
+Write down the ID of the new item (here, 3) and insert this expression in an article :
+``` 
+{jumi *3}{/jumi}
+```
+This is a new feature. See below.
+
+## New feature in component 
 1 - When using jumi component, we create a new element, write down its ID and insert this expression in an article.
 
 If element has an ID 3 :
@@ -48,7 +69,7 @@ echo 'Hello, '. $myVariable .'.';
 
 2 - Jumi has been designed from the beginning to work with Joomla API.
 
-```html
+```
 {jumi}
 <p><a href="index.php/using-joomla/getting-help">Getting help</a></p>
 {/jumi}
@@ -68,35 +89,14 @@ $menuid = JFactory::getApplication()->getMenu()->getActive()->id;
 
 3 - We can add a php file in an article as well :
 
-```html
+```
 {jumi jumifolder/file.php}{/jumi}
 ```
 where file.php is located in a folder named "jumifolder" placed at your joomla package root.
 
 ## Jumi module
 To be used like a regular module.
-Taking advantage of its ability to "crunch" Joomla API, it can be used to send a JS file to head tag when one wants to implement a CSS/JS files combination in one article only.
 
-In Code Written :
-```php
-<?php 
-$document = JFactory::getDocument();
-$document->addStyleSheet(JURI::base(true).'/js/test.css');
-$document->addScript(JURI::base(true).'/js/test.js');
-```
--   Publish everywhere
--   Choose a specific position : jumi1 for example
--   In article : {loadposition jumi1}
-
->For joomla developpers
-
-One drawback to this JS stuff is that, in Joomla 3.x, it sends the JS file below Mootools and above jQuery.
-So, if jQuery is your thing, add :
-
-```php
-JHtml::_('bootstrap.framework');
-```
-in mod_jumi.php
 
 ###### Credits
 [Simon Poghosyan](http://2glux.com/projects/jumi)
