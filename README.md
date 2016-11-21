@@ -1,7 +1,8 @@
-Hi all, I am going to clean this version of Jumi of all Joomla 2.5 leftovers.
-My goal is to test and modify (if necessary) on a Joomla 3.5 version.
-Let's get a beautylift for Jumi !
-If anyone is ready to help, feel free and post on Issues.
+# November 2016 
+Jumi, after some refurbishing, is still functional in joomla 3.6.x and 3.7dev.
+Thanks to Mr Marhaj, the creator of this component, who wrote perennial code years ago.
+I would not recommend it in production though. I use it to test bits of code.
+If anyone is ready to help improve it, feel free and post on Issues.
 
 jumi-3.0.5
 ==========
