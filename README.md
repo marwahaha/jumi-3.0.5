@@ -15,7 +15,7 @@ https://github.com/ghazal/jumi-3.0.5
 ## How it began
 Simon Poghosyan did a wonderful job when he upgraded [Jumi](http://2glux.com/projects/jumi) to work better with joomla 2.5.x and joomla 3.x.
 
-So, when Raygen and I met on [jumi forum](http://2glux.com/forum/jumi/), we decided to make it even better and we rewrote it a little to add a feature that existed in previous versions but was abandonned (explanation below).
+So, when Raygen and I met on [jumi forum](http://2glux.com/forum/jumi/), we decided to make it even better and we rewrote it a little to add a feature that existed in previous versions but was abandoned (explanation below).
 
 ## Regular use
 1 - Open jumi component
